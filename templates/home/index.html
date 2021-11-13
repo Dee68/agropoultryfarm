@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+
+{% endblock title %}
+{% block aside %}
+ {% include "partials/_aside.html" %}
+{% endblock aside %}
+
+	{% block services %}
+    {% include "partials/_services.html" %}
+    {% endblock services %}
+	{% block product %}
+    {% include "partials/_product.html" %}
+    {% endblock product %}
+	
+	{% block testimonial %}
+    {% include "partials/_testimonial.html" %}
+    {% endblock testimonial %}
+	
+
+	{% block counter %}
+    {% include "partials/_counter.html" %}
+    {% endblock counter %}
+
+	{% block newsletter %}
+    {% include "partials/_newsletter.html" %}
+    {% endblock newsletter %}
