@@ -18,9 +18,12 @@ from django.urls import path
 from django.urls.conf import include
 from django.conf import settings
 from django.conf.urls.static import static
+from home.views import AboutView,ContactView
 
 urlpatterns = [
     path('',include('home.urls', namespace='home')),
+    path('about/', AboutView.as_view(), name='about'),
+    path('contact/',ContactView.as_view(), name='contact'),
     path('admin/', admin.site.urls),
 ]
 
